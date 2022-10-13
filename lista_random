@@ -1,0 +1,15 @@
+import random
+
+n = int(input("cuantos numeros quieres en la lista: "))
+
+numeros = []
+for i in range(n):
+  x = random.randint(1,100)
+  numeros.append(x)
+
+print(numeros)
+
+print()
+
+numeros.sort()
+print(numeros)

@@ -1,0 +1,20 @@
+import random
+
+while True:
+  numero_pensado = random.randint(1,100)
+  print('Adivina el número')
+  while True:
+    numero = int(input('Número?: '))
+    if numero < numero_pensado:
+      print('Demasiado pequeño')
+    elif numero > numero_pensado:
+      print('Demasiado grande')
+    else:
+      break
+  print('¡Lo has adivinado!')
+  
+  seguir = input("Si quieres salir introduce -No- \n")
+  
+  if seguir == "No":
+    break
+    
